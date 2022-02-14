@@ -31,7 +31,7 @@ def absorption( t=None,d=None,s=None,pH=None,f=None):
         raise RuntimeError('absorption.absorption: salinity out of range!')
      
     try:
-        if not 0 < d.all() < 7000:
+        if not 0 < d.all() < 7:
             ...
     except:
         ...
