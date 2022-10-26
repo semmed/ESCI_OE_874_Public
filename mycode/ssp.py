@@ -14,8 +14,8 @@ class SSP:
     
     # B3.1
     def read_mvp_file(self, fullpath):
-        
-            #NOTE: The following is indented at the right level - 
+         
+            #NOTE: The following is indented at the right level, using the indentation from B3.1 - 
             # adjusting it will create errors
             # assuming you indented the previous code correctly.
             
