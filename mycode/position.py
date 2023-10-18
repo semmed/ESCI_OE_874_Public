@@ -45,7 +45,7 @@ class Position:
         
         if len(self.times):
             txt += "Start Time             : %s\n" % (min(self.times))
-            txt += "End Time               : %s\n" % (min(self.times))
+            txt += "End Time               : %s\n" % (max(self.times))
         else:
             txt += 'No time data present\n'
         return txt
