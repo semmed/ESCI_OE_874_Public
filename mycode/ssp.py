@@ -16,8 +16,7 @@ class SSP:
     def read_mvp_file(self, fullpath):
          
             #NOTE: The following is indented at the right level, using the indentation from B3.1 - 
-            # adjusting it will create errors
-            # assuming you indented the previous code correctly.
+            # adjusting it will create errors (assuming you indented the previous code correctly).
             
             # B3.4 Find the needed SSP metadata
             # Find and extract the time string
@@ -172,6 +171,7 @@ class SSP:
         else:
             labels = [item.get_text() for item in ax1.get_yticklabels()]
             empty_string_labels = ['']*len(labels)
+            ax1.set_yticks(ax1.get_yticks().tolist()) # Bug in Matplotlib requires this
             ax1.set_yticklabels(empty_string_labels)
             
         plt.xlabel('Sound Speed [m/s] →')
