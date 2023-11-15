@@ -46,14 +46,12 @@ class Ping:
         self.metadata = dict()
 
     def read(self, fullpath):
-        # Check to see whether data already exists in the object
         
+        # Check to see whether data already exists in the object
         if self.lat:
-            raise RuntimeError('SSP object already contains a profile')
+            raise RuntimeError('Ping object already contains data')
 
         # Check the File's existence
-        print(fullpath)
-        
         if os.path.exists(fullpath):
             self.metadata["Source File"] = fullpath
             print('Opening sound speed profile data file:' + fullpath)

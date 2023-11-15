@@ -119,7 +119,6 @@ class om_map:
             raise RuntimeError('scaling function currently not available')
         
         cbar = fig.colorbar(cax, ticks=tcks, orientation='vertical',shrink=.3)
-        cbar.ax.set_xticklabels(tck_label)  # horizontal colorbar
         
 
         

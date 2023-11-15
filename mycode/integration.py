@@ -165,7 +165,7 @@ class Integration:
         ax[2] = plt.subplot(3, 1, 3)
         plt.plot(self.depth, label='Depths')
         plt.plot(self.sounding, label='Soundings wrt EGM08')
-        plt.plot(depths_corr_heave, '-r', label='Depths w/Heave', )
+        plt.plot(depths_corr_heave, '-r', label='Depths w/Heave Correction', )
         plt.plot(self.sounding_wl, label='Soundings wrt Chart Datum')
         plt.legend()
         plt.ylabel("Depths [m]")
